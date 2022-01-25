@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a Function</title>
+</head>
+
+<body>
+    <h1>Hello Factorial Program</h1>
+    <script>
+        var number = parseInt(prompt("Enter a Number to find a Factorial "));
+        if (number < 0) {
+            document.write("Error, The Factorial of Nrgative Numbe does not Exist")
+        }
+        else if (number === 0) {
+            document.write("The Factorial of 0 is 1")
+        }
+        else {
+            var fact = 1;
+            for (i = 1 ; i <= number; i++) {
+                fact = fact * i
+            }
+            document.write("The Factorial of a Number is ", fact)
+        }
+    </script>
+</body>
+
+</html>
