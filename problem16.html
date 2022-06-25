@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Occurrence of a Character in a String</title>
+</head>
+
+<body>
+    <script>
+    function checkOccurence(string,chartoCheck){
+    var count=0;
+    for(let i=0;i<=string.length;i++){
+    if(string[i]===chartoCheck){
+        count+=1
+    }
+    }
+return count
+    }
+
+   var InputString=prompt("Enter a String");
+   var characterToFind=prompt("Enter the word you find the occurence");
+   var countChracter=checkOccurence(InputString,characterToFind);
+   document.write(`The number of occurence of a Character is ${countChracter}`);
+
+
+    </script>
+</body>
+
+</html>

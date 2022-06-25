@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Number using recursion</title>
+</head>
+
+<body>
+    <h1> Natural Number using recursion</h1>
+    <script>
+        var number = parseInt(prompt("Enter a Natural Number to find Recursion"));
+        var recursionSum = (number) => {
+            var sum = 0;
+            for (let i = 1; i <= number; i++) {
+                sum = number + recursionSum(number - 1);
+            }
+            return sum;
+        }
+        var sumofnaturalnumber = recursionSum(number)
+        document.write(`The sum of Natural number using recursion is  ${sumofnaturalnumber}`)
+    </script>
+</body>
+
+</html>

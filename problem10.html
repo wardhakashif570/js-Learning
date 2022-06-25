@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const text = prompt("Enter a String to check Palidrome or not");
+        const reverseString = text.split('').reverse().join('');
+        if (text === reverseString) {
+            document.write("Palindrome");
+        }
+        else {
+            document.write("Not a Palindrome");
+        }
+    </script>
+</body>
+
+</html>
