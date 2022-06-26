@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Whether a String Starts and Ends With Certain Characters</title>
+</head>
+
+<body>
+    <script>
+      function checkString(inputuser){
+      if(inputuser.startsWith('a') && inputuser.endsWith('t')){
+        document.write("The String starts with a and Ends with t");
+      }
+      else if(inputuser.startsWith('a')){
+        document.write("The String starts with a");
+      }
+      else if(inputuser.endsWith('t')){
+        document.write("The String Ends with t");
+      }
+      else{
+        document.write("The String does not starts with a and does not Ends with t");
+      }
+    }
+      var inputuser=prompt("Enter a string and check whether starts with a and end with t");
+      checkString(inputuser);
+    </script>
+</body>
+
+</html>
