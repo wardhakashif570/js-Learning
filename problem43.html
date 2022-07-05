@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program to Compare The Value of Two Dates
+    </title>
+</head>
+
+<body>
+    <script>
+        var d1 = new Date();
+        var d2 = new Date();
+        const check1 = d1 < d2;
+        document.write(check1);
+
+        const check2 = d1 > d2;
+        document.write(check2);
+
+        const check3 = d1 <= d2;
+        document.write(check3);
+
+        const check4 = d1 >= d2;
+        document.write(check4);
+
+        const check5 = d1.getTime() === d2.getTime();
+        document.write(check5);
+
+        const check6 = d1.getTime() !== d2.getTime();
+        document.write(check6);
+    </script>
+</body>
+
+</html>
