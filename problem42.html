@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program to Format the Date</title>
+</head>
+
+<body>
+    <script>
+        var dateObj = new Date();
+        var getYear = dateObj.getFullYear();
+        var getFullMonth = dateObj.getMonth() + 1;
+        var getDay = dateObj.getDay();
+
+        if (getDay < 10) {
+            getDay = '0' + getDay
+        }
+        if (getFullMonth < 10) {
+            getFullMonth = '0' + getFullMonth
+        }
+        // Display Date in diffeerent Format
+        08 / 26 / 2020
+        08 - 26 - 2020
+        26 - 08 - 2020
+        26 / 08 / 2020
+        document.write(getDay + '/' + getFullMonth + '/' + getYear + "<br/>");
+        document.write(getDay + '-' + getFullMonth + '-' + getYear + "<br/>");
+        document.write(getFullMonth + '-' + getDay + '-' + getYear + "<br/>");
+        document.write(getFullMonth + '/' + getDay + '/' + getYear + "<br/>");
+    </script>
+</body>
+
+</html>
