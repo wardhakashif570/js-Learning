@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program to Remove Specific Item From an Array</title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5];
+        var newArray = []
+        var remove = parseInt(prompt("Enter a number from 1 to 5 which you want to remove "))
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] !== remove)
+               newArray.push(arr[i])
+        }
+
+        newArray.map(item => {
+            document.write(item + "<br/>")
+        })
+    </script>
+</body>
+
+</html>
