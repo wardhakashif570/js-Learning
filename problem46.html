@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program to Insert Item in an Array</title>
+</head>
+
+<body>
+    <script>
+        var fruitsarray = ["apple", "mango", "banana", "Cherry"];
+        fruitsarray.splice(2, 0, "water melon", "Grapes");
+        fruitsarray.map(item => {
+            document.write(item + "<br />")
+        })
+    </script>
+</body>
+
+</html>
