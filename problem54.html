@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Create Two Dimensional Array</title>
+  </head>
+
+  <body>
+    <script>
+        const MultiDimensional=(a,b)=>{
+            const arr=[];
+            for(let i=0;i<a;i++){
+                for(let j=0;j<b;j++){
+                    arr[i]=[]
+                }
+            }
+            for(let i=0;i<a;i++){
+                for(let j=0;j<b;j++){
+                    arr[i][j]=j
+                }
+            }
+    return arr;
+        }
+      var x=2;
+      var y=3;
+      var result=MultiDimensional(x,y);
+      console.log(result);
+    </script>
+</html>
