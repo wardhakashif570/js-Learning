@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Merge Two Arrays and Remove Duplicate Items</title>
+  </head>
+
+  <body>
+    <script>
+      function uniqueArr(arr){
+            var uniqueArrvar=[];
+            for(let i of arr){
+             if(uniqueArrvar.indexOf(i)=== -1){
+                uniqueArrvar.push(i)
+             }
+            }
+            return uniqueArrvar;
+        }
+       var arr1=[1,2,3,5];
+       var arr2=[6,7,4,3];
+       
+       var mergeArr=[...arr1,...arr2];
+       var result=uniqueArr(mergeArr)
+        result.map((item)=>{
+            document.write(item)
+        })
+    </script>
+</html>
