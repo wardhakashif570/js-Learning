@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Sort Array of Objects by Property Values</title>
+  </head>
+
+  <body>
+    <script>
+    const Sorting=(a,b)=>{
+        return a.age -b.age;
+     }
+    var arrofobj=[{
+    name:"warda",
+    age:23
+    },{
+        name:"fatima",
+        age:24
+    },{
+        name:"Mustafa",
+        age:16
+    }]
+    var sortArray=arrofobj.sort(Sorting)
+    console.log(sortArray)
+    </script>
+</html>
