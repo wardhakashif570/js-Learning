@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Compare Elements of Two Arrays</title>
+  </head>
+
+  <body>
+    <script>
+        const CompareStringFunction=(array1,array2)=>{
+        var result=JSON.stringify(array1) === JSON.stringify(array2);
+        if(result){
+            document.write("The Elements of array are same")
+        }
+        else{
+            document.write("The Elements of array are not same")
+        }
+        }
+     var arr1=[1,3,5];
+     var arr2=[1,3,5];
+     var CompareString=CompareStringFunction(arr1,arr2)
+    </script>
+</html>
