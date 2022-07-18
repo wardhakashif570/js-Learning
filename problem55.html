@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Extract Given Property Values from Objects as Array</title>
+  </head>
+
+  <body>
+    <script>
+        var extractValue=(arr,props)=>{
+            var extractedValueContent=objArray.map(item=>item[props]);
+        return extractedValueContent
+        }
+      
+// passing an array of objects and property 'a' to extract
+const objArray = [{a: 1, b: 2}, {a: 4, b: 5}, {a: 8, b: 9}];
+const result = extractValue(objArray, 'a');
+console.log(result);
+    </script>
+</html>
