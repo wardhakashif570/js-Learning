@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Get File Extension</title>
+  </head>
+
+  <body>
+    <script>
+        const getFileExtension=(fileName)=>{
+            return fileName.split('.').pop();
+        }
+
+        var fileExtension1='module.js';
+        console.log(getFileExtension(fileExtension1));
+
+        var fileExtension2='module.html';
+        console.log(getFileExtension(fileExtension2))
+    </script>
+</html>
