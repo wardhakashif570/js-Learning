@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Program to Generate a Random Number Between Two Numbers</title>
+  </head>
+
+  <body>
+    <script>
+        const maxValue=parseInt(prompt("Enter max value"));
+        const minValue=parseInt(prompt("Enter minimum value"));
+        var getRandomValue=Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+        document.write(getRandomValue)
+    </script>
+</html>
