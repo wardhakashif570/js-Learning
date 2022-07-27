@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Check If a Variable is of Function Type</title>
+  </head>
+
+  <body>
+    <script>
+     const VariableFunc=(variable)=>{
+if(typeof variable === 'function'){
+    console.log('it is a Functional Type');
+}
+else{
+    console.log('it is not a Functional Type');
+}
+     }
+     var count=true;
+     const x=()=>{
+        console.log("it is a Functional Type");
+     }
+     VariableFunc(count);
+     VariableFunc(x)
+    </script>
+</html>
