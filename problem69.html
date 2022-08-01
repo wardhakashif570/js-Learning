@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Program to Perform Function Overloading</title>
+  </head>
+
+  <body>
+    <script>
+    function sum(){
+        if(arguments.length===0){
+            document.write("You have not passed any argument" +"<br />");
+        }
+        else if(arguments.length===1){
+            document.write("Pass at least two arguments" +"<br />" );
+        }
+        else{
+            var sumVar=0;
+            for(let i=0;i<arguments.length;i++){
+                sumVar=sumVar + arguments[i];
+            }
+            document.write("the sum is " + sumVar +"<br />")
+        }
+
+    }
+    sum();
+    sum(5);
+    sum(3,4);
+    sum(1,2,3,4,5); 
+    </script>
+</html>
